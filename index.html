@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+      <div class="welcome-message">
+        <h1 class="display-6 mt-4 mb-4">Welcome to the Dice Game!</h1>
+        <p class="display-2"></p>
+      </div>
+      <div class="roll-dice mt-4">
+        <button
+          class="btn btn-primary roll-button py-3 px-4"
+          onclick="rollDice()"
+        >
+          Roll Dice!
+        </button>
+        <p class="small text-body-secondary py-2">
+          Click the button to roll the dice!
+        </p>
+      </div>
+      <div class="dice-container">
+        <div class="dice-1-container">
+          <img
+            src="./images/winner.png"
+            height="50"
+            alt="Winner"
+            class="win-flag-1"
+          />
+          <p class="lead text-body-secondary mt-2">Player 1</p>
+          <img src="./images/dice-1.png" alt="Dice 1" class="dice-image1" />
+        </div>
+        <div class="dice-2-container">
+          <img
+            src="./images/winner.png"
+            height="50"
+            alt="Winner"
+            class="win-flag-2"
+          />
+          <p class="lead text-body-secondary mt-2">Player 2</p>
+          <img src="./images/dice-1.png" alt="Dice 2" class="dice-image2" />
+        </div>
+      </div>
+      <div class="quote-container border-bottom border-secondary">
+        <p class="lead text-body-secondary py-3 px-4 mt-4">
+          <em
+            >Life is like a game of dice; even if you don't get the number you
+            want, you have to play the one that turned up." — Ancient Greek
+            Proverb</em
+          >"
+        </p>
+      </div>
+
+      <footer>
+        <h1 class="footer-logo">
+          🕷️s<img
+            src="./images/code.png"
+            class="code-image"
+            height="25"
+            alt="code image"
+          />n
+        </h1>
+        <p id="footer" title="by: dtorrefiel">®️2026 Software Engineering.</p>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./dice.js" defer></script>
+</html>

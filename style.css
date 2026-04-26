@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(90deg, #0cc0df, #ffde59);
+}
+
+.dice-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.dice-1-container {
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.dice-2-container {
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.roll-dice button {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.dice-image1,
+.dice-image2 {
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(61, 59, 59, 0.1);
+}
+
+.win-flag-none {
+  display: none;
+}
+
+@media (min-width: 1250px) {
+  .dice-container {
+    gap: 20px;
+  }
+
+  .container {
+    padding: 20px 200px;
+  }
+}
